@@ -28,6 +28,11 @@ ul {
     list-style-type: none;
 }
 /* #region HEADER */
+header a:hover,
+header a:focus,
+header a:active {
+    color: var(--ocean);
+}
 .logo {
     font-family: var(--second-family);
     font-weight: 700;
@@ -73,10 +78,18 @@ ul {
 .section-button {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: var(--iris);
+}
+.section-button span {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    color: var(--white);
+}
+.section-button:hover, .section-button:focus, .section-button:active {
+    color: var(--iris);
+}
+.section-button span:hover, .section-button span:focus, .section-button span:active {
     color: var(--white);
 }
 /* #endregion SECTION 1 */
@@ -171,6 +184,11 @@ ul {
 }
 /* #endregion SECTION-PORTFOLIO */
 /* #region FOOTER */
+footer a:hover,
+footer a:focus,
+footer a:active {
+    color: var(--ocean);
+}
 footer {
     background: var(--navy-blue);
 }
