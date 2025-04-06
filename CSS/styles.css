@@ -65,7 +65,7 @@ header a:active {
 /* #endregion HEADER */
 /* #region SECTION-HERO */
 .section-hero {
-    background: var(--navy-blue);
+    background-color: var(--navy-blue);
 }
 .section-hero h1 {
     font-weight: 700;
@@ -77,7 +77,8 @@ header a:active {
 }
 .section-button {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: var(--iris);
+    background-color: var(--iris);
+    cursor: pointer;
 }
 .section-button span {
     font-weight: 500;
@@ -110,7 +111,6 @@ header a:active {
     color: var(--navy-blue);
 }
 .section-feature p {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -119,7 +119,7 @@ header a:active {
 /* #endregion SECTION-FEATURE */
 /* #region SECTION-TEAM */
 .section-team {
-    background: var(--cloud);
+    background-color: var(--cloud);
 }
 .section-team h2 {
     font-weight: 700;
@@ -131,10 +131,10 @@ header a:active {
 }
 .section-team li {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    background: var(--white);
+    background-color: var(--white);
 }
 .section-team img {
-    background: url("path_to_image");
+    background-color: url("path_to_image");
 }
 .section-team h3 {
     font-weight: 500;
@@ -145,7 +145,6 @@ header a:active {
     color: var(--navy-blue);
 }
 .section-team p {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -163,10 +162,10 @@ header a:active {
     color: var(--navy-blue);
 }
 .section-portfolio li {
-    background: var(--white);
+    background-color: var(--white);
 }
 .section-portfolio img {
-    background: url("path_to_image");
+    background-color: url("path_to_image");
 }
 .section-portfolio h3 {
     font-weight: 500;
@@ -176,7 +175,6 @@ header a:active {
     color: var(--navy-blue);
 }
 .section-portfolio p {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -190,15 +188,15 @@ footer a:active {
     color: var(--ocean);
 }
 footer {
-    background: var(--navy-blue);
+    background-color: var(--navy-blue);
 }
 footer .logo {
     color: var(--cloud);
 }
 footer p {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--cloud);
 }
+/* #endregion FOOTER */
