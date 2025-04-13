@@ -35,7 +35,6 @@ body {
     padding: 0 15px;
     margin: 0 auto;
     max-width: 1158px;
-    display: flex;
 }
 .section {
     padding: 120px 0;
@@ -52,21 +51,13 @@ a:focus,
 a:active {
     color: #404bbf;
 }
-.hed {
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    gap: 332px;
+.heavy {
+    display: flex;
+    justify-content: space-between;
 }
 .menu {
     display: flex;
-    width: 452px;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    gap: 76px;
 }
 .logo {
     font-family: "Raleway", sans-serif;
@@ -76,12 +67,7 @@ a:active {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    gap: 0;
-    /* width: 115px; */
+    margin-right: 76px;
 }
 .logo-studio {
     color: #2e2f42;
@@ -93,14 +79,14 @@ a:active {
     letter-spacing: 0.02em;
     color: #2e2f42;
     display: flex;
-    justify-content: flex-start;
     align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: row;
-    width: 261px;
     gap: 40px;
 }
 .menu-nav-studio {
     color: #2e2f42;
+    padding: 24px 0;
 }
 .menu-nav-studio:hover,
 .menu-nav-studio:focus,
@@ -117,9 +103,9 @@ a:active {
 }
 .contacts-item  {
     display: flex;
-    width: 345px;
-    flex-direction: row;
+    align-items: center;
     gap: 40px;
+    padding: 24px 0;
 }
 .contacts-mail {
     color: #434455;
@@ -128,14 +114,9 @@ a:active {
 
 
 /* #region SECTION-HERO */
-.hero-item {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 48px;
-}
 .hero {
     background-color: #2e2f42;
+    padding: 188px 0;
 }
 .hero-title {
     font-weight: 700;
@@ -144,7 +125,8 @@ a:active {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    width: 496px;
+    max-width: 496px;
+    margin: 0 auto 48px;
 }
 .hero-button {
     background-color: #4d5ae5;
@@ -155,11 +137,11 @@ a:active {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
     border-radius: 4px;
     padding: 16px 32px;
 }
@@ -172,25 +154,26 @@ a:active {
 
 
 /* #region SECTION-FEATURE */
+.feature-title {
+    visibility: hidden;
+}
 .feature-card {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    gap: 24px;
 }
-.feature-card-item {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 8px;
+.feature-link {
+    width: calc((100% - 72px) / 4);
 }
-.team-list {
+.feature-team-list {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
+    padding: 0;
 }
 .feature-item {
     font-size: 16px;
@@ -205,12 +188,6 @@ a:active {
 .team {
     background-color: #F4F4FD;
 }
-.team-card {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 72px;
-}
 .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -219,30 +196,36 @@ a:active {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin: 0 auto 72px;
 }
 .team-item {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     gap: 24px;
 }
 .team-list {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 32px;
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
     background-color: #fff;
+    width: calc((100% - 72px) / 4);
 }
 .team-list-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 8px;
+    padding: 32px 0;
 }
 .team-list-title {
     font-weight: 500;
@@ -250,35 +233,41 @@ a:active {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.team-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: center;
 }
 /* #endregion SECTION-TEAM */
 
 
 /* #region   SECTION-PORTFOLIO */
-.portfolio-app {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 72px;
-}
 .portfolio-app-item {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
 }
+.portfolio-card {
+    width: calc((100% - 48px) / 3);
+}
 /* .portfolio-card {
     border: 1px solid #e7e9fc;
 } */
+
 .portfolio-app-content {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 8px;
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
@@ -289,20 +278,36 @@ a:active {
 
 /* #region FOOTER */
 
-.ft {
+.ball {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 .wrapper-item {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    gap: 16px;
+}
+.logo-ball {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 0;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .wrapper-item-logo {
     color: #f4f4fd;
 }
-.wrapper-item-ft {
+.wrapper-item-ball {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
