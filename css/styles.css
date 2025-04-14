@@ -87,6 +87,7 @@ a:active {
 .menu-nav-studio {
     color: #2e2f42;
     padding: 24px 0;
+    /* width: calc((100% - 80px) / 3); */
 }
 .menu-nav-studio:hover,
 .menu-nav-studio:focus,
@@ -154,14 +155,25 @@ a:active {
 
 
 /* #region SECTION-FEATURE */
-.feature-title {
-    visibility: hidden;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .feature-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    gap: 24px;
 }
 .feature-link {
     width: calc((100% - 72px) / 4);
@@ -247,6 +259,16 @@ a:active {
 
 
 /* #region   SECTION-PORTFOLIO */
+.portfolio-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    text-transform: capitalize;
+    margin: 0 auto 72px;
+}
 .portfolio-app-item {
     display: flex;
     justify-content: space-between;
@@ -296,13 +318,13 @@ a:active {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    gap: 0;
     display: inline-block;
     margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 0px;
 }
 .wrapper-item-logo {
     color: #f4f4fd;
