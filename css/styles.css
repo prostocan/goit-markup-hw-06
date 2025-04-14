@@ -68,6 +68,7 @@ a:active {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
+    display: inline-block;
 }
 .logo-studio {
     color: #2e2f42;
