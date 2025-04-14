@@ -321,10 +321,7 @@ a:active {
     color: #4d5ae5;
     display: inline-block;
     margin-bottom: 16px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 0px;
+    text-align: center;
 }
 .wrapper-item-logo {
     color: #f4f4fd;
