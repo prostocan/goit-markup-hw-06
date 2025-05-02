@@ -498,7 +498,6 @@ a:active {
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 16px;
-    margin-right: 24px;
     background-color: transparent;
 
     font-weight: 400;
@@ -617,11 +616,6 @@ a:active {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--navy-blue);
-    margin-bottom: 16px;
-}
-.modal-form {
-    border-radius: 4px;
-    width: 360px;
     margin-bottom: 16px;
 }
 .modal-form-child {
