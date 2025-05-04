@@ -333,7 +333,7 @@ a:active {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover, .contacts-link:focus {
-    background-color: #404bbf;
+    background-color: var(--ocean);
 }
 .icon-ellipse {
     fill: var(--cloud);
@@ -556,6 +556,11 @@ a:active {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
 .modal {
     overflow-y: auto;
     top: 50%;
@@ -572,11 +577,6 @@ a:active {
     background-color: var(--dairy);
     padding: 72px 24px 24px 24px;
     position: absolute;
-}
-.modal-overlay.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
 }
 .modal-close {
     position: absolute;
