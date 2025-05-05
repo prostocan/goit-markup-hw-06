@@ -103,12 +103,12 @@ a:active {
     color: var(--navy-blue);
 }
 .menu {
-    /* display: flex; */
-    display: none;
+    display: flex;
     align-items: center;
 }
 .menu-nav {
-    display: flex;
+    /* display: flex; */
+    display: none;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
@@ -148,13 +148,13 @@ a:active {
     letter-spacing: 0.02em;
     color: var(--slate);
 
-    /* display: flex; */
-    display: none;
+    display: flex;
     align-items: center;
 }
 
 .contacts-item {
-    display: flex;
+    /* display: flex; */
+    display: none;
     align-items: center;
     gap: 40px;
     padding: 24px 0;
@@ -218,7 +218,7 @@ a:active {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--white);
-    min-width: 216px;
+    max-width: 216px;
     margin: 0 auto 72px;
 }
 .hero-button {
@@ -677,7 +677,7 @@ a:active {
     outline: none;
     border: 1px solid var(--white);
     border-radius: 4px;
-    width: 100%;
+    width: 288px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     opacity: 0.3;
@@ -748,8 +748,8 @@ a:active {
 }
 
 .modal-menu {
-    min-width: 320px;
-    max-width: 767px;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     padding: 72px 16px 40px;
     margin: 0 auto;
@@ -800,11 +800,10 @@ a:active {
 
 .mob-menu-nav {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 168px;
+    margin-bottom: auto;
 }
 
 .mob-menu-nav-studio {
@@ -822,15 +821,12 @@ a:active {
 }
 
 .mob-contacts {
-    max-width: 193px;
-    margin: 0 auto 48px;
+    margin-bottom: 48px;
 }
 
 .mob-contacts-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 24px;
 }
 
@@ -915,7 +911,7 @@ a:active {
 .modal {
     min-width: 288px;
     max-width: 767px;
-    height: 100%;
+    min-height: 623px;
     margin: 0 auto;
     border-radius: 4px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
