@@ -87,16 +87,14 @@ a:active {
     color: var(--ocean);
 
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .menu {
             display: none;
-        }
-    
-        .contacts {
-            display: none;
-        }
+        }   
+    .contacts {
+        display: none;
+    }
 }
-
 .logo {
     min-width: 115px;
     font-family: "Raleway", sans-serif;
@@ -331,7 +329,7 @@ a:active {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--white);
-    max-width: 216px;
+    min-width: 216px;
     margin: 0 auto 72px;
 }
 .hero-button {
@@ -358,10 +356,33 @@ a:active {
 .hero-button:active {
     background-color: var(--ocean);
 }
+@media screen and (min-width: 768px) {
+    .hero-title {
+        font-size: 56px;
+    }
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/officce-tab@1x.jpg);
+                
+    }
+}
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/officce-tab@2x.jpg);
+    }
+}
 /* #endregion hero */
 
 
 /* #region feature */
+@media screen and (max-width: 1158px) {
+    .feature-link-icon {
+        display: none;
+    }
+}
 .feature {
     padding: 96px 0;
 }
@@ -407,6 +428,19 @@ a:active {
     letter-spacing: 0.02em;
     color: var(--slate);
 }
+@media screen and (min-width: 768px) {
+    .feature-card {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .feature-link {
+        align-items: flex-start;
+        min-width: 356px;
+    }
+}
 /* #endregion feature */
 
 
@@ -434,8 +468,16 @@ a:active {
     flex-direction: column;
     gap: 72px;
 }
+@media screen and (min-width: 768px) {
+    .team-item {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+}
 .team-list {
-    max-width: 264px;
+    min-width: 264px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -525,6 +567,17 @@ a:active {
     align-items: center;
     gap: 48px;
 }
+@media screen and (min-width: 768px) {
+    .portfolio-app-item {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+        .portfolio-card {
+            min-width: 356px;
+        }
+}
 .portfolio-card {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
                 0 1px 1px 0 rgba(46, 47, 66, 0.16),
@@ -582,6 +635,38 @@ a:active {
     align-items: center;
     gap: 72px;
 }
+@media screen and (min-width: 768px) {
+    .wrapper-item {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+    .wrapper-item-first {
+        align-items: flex-start;
+        min-width: 264px;
+    }
+    .ball-social {
+        align-items: flex-start;
+    }
+    .wrapper-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 453px;
+    }
+    .form-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    .form-input {
+        margin: 0 !important;
+        min-width: 264px;
+    }
+}
 .wrapper-item-first {
     display: flex;
     flex-direction: column;
@@ -617,6 +702,9 @@ a:active {
     align-items: center;
     max-width: 208px;
 }
+.wrapper-form {
+    min-width: 288px;
+}
 .ball-social-text {
     font-weight: 500;
     font-size: 16px;
@@ -624,6 +712,7 @@ a:active {
     letter-spacing: 0.02em;
     color: var(--white);
     margin-bottom: 16px;
+    text-align: center;
 }
 .ball-social-list {
     display: flex;
@@ -652,18 +741,12 @@ a:active {
 .social-icons-element {
     fill: var(--cloud);
 }
-.wrapper-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .form-input {
     display: block;
     outline: none;
     border: 1px solid var(--white);
     border-radius: 4px;
-    max-width: 288px;
+    width: 100%;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     opacity: 0.3;
@@ -696,6 +779,7 @@ a:active {
     border-radius: 4px;
     padding: 8px 24px;
     min-width: 165px;
+    margin: 0 auto;
     height: 40px;
     border: none;
     background-color: var(--iris);
