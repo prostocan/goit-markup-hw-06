@@ -451,7 +451,7 @@ a:active {
         display: flex;
     }
 }
-.faeture-team-list {
+.feature-team-list {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
@@ -765,7 +765,7 @@ a:active {
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 72px;
-        max-width: 768px;
+        max-width: 584px;
     }
 }
 @media screen and (min-width: 1158px) {
